@@ -1,0 +1,81 @@
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="text"] {
+  border: none; /* Remove border for input */
+  outline: none; /* Remove outline */
+  font-size: 18px;
+  padding: 4px;
+}
+.tag {
+  display: inline-block;
+  background-color: rgba(64, 64, 67, 0.315);
+  color: black;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 5px 10px 5px 5px;
+  margin-right: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0px;
+}
+.tag input {
+  background: transparent;
+  max-width: 50px;
+}
+.operand-tag {
+  background-color: transparent;
+  color: black;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.operand-tag button {
+  display: none;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+.tags_input {
+  display: flex;
+  border: 2px solid black;
+  width: max-content;
+  padding: 10px 10px;
+  border-radius: 4px;
+  width: 90%;
+}
+.input_group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input_group .dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  max-height: 40vh;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px #00000080;
+}
